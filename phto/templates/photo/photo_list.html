@@ -5,7 +5,20 @@
     <body>
         <h1><a href="">사진 목록 페이지</a></h1>
         <section>
+            {% for photo in photos %}
             <div>
+                <h2>
+                    <a href="">{{ photo.title }}</a>
+                </h2>
+                <img
+                src="{{ photo.image }}"
+                alt="{{ photo.title }}"
+                width="300"
+                />
+                <p>{{ photo.author }}, {{ photo.price }}원</p>
+            </div>
+            {% endfor %}
+            {% comment %} <div>
                 <h2>
                     <a href="">푸른 언덕</a>
                 </h2>
@@ -26,7 +39,7 @@
                     width="300"
                 />
                 <p>마이크로소프트, 1000원</p>
-            </div>
+            </div> {% endcomment %}
         </section>
     </body>
 </html>

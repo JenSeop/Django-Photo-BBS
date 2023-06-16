@@ -1,5 +1,5 @@
 from django.urls import path
-from .templates.photo import views
+from . import views
 
 urlpatterns = [
     path('', views.photo_list, name='photo_list'),
