@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class phto(models.Model):
+class Phto(models.Model):
     title = models.CharField(max_length=50)
     author = models.CharField(max_length=50)
     image = models.CharField(max_length=200)
